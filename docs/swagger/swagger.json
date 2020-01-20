@@ -1,0 +1,103 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": " API",
+    "description": "Walmart Test API DOCS",
+    "license": {
+      "name": "Eddie"
+    }
+  },
+  "host": "",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "Walmart Test API Server",
+      "description": "API for Walmart Test  "
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/product": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Product List  from database",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "search",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "minReviewRating",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "in": "query",
+            "name": "maxReviewRating",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "in": "query",
+            "name": "maxReviewCount",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "in": "query",
+            "name": "minReviewCount",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "in": "query",
+            "name": "inStock",
+            "required": false,
+            "type": "boolean"
+          }
+
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid Object"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "400": {
+            "description": "Bad  Request"
+          },
+          "200": {
+            "description": "ok",
+            "schema": {
+            }
+          }
+        }
+      }
+    }
+
+  },
+  "definitions": {
+  }
+}
