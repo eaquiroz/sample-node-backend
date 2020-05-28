@@ -1,6 +1,6 @@
 
 let config = {
-    name: "Walmart Test Server",
+    name: "Eddie Test Server",
     version: "1.0",
     host: process.env.APP_HOST || "127.0.0.1",
     environment: process.env.NODE_ENV || "development",

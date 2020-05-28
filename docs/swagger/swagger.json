@@ -3,7 +3,7 @@
   "info": {
     "version": "1.0.0",
     "title": " API",
-    "description": "Walmart Test API DOCS",
+    "description": "Eddie Test API DOCS",
     "license": {
       "name": "Eddie"
     }
@@ -12,8 +12,8 @@
   "basePath": "/api/v1",
   "tags": [
     {
-      "name": "Walmart Test API Server",
-      "description": "API for Walmart Test  "
+      "name": "Eddie Test API Server",
+      "description": "API for Eddie Test  "
     }
   ],
   "schemes": [
